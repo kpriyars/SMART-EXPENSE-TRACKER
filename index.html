@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker | KP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tracker-container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <div class="balance-box">
+                <span>Total Balance</span>
+                <h2 id="total-balance">₹0.00</h2>
+            </div>
+        </header>
+
+        <section class="form-card">
+            <input type="text" id="reason" placeholder="What did you buy?">
+            <input type="number" id="amount" placeholder="Amount (₹)">
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="add-btn">Add Transaction</button>
+        </section>
+
+        <section class="history">
+            <h3>History</h3>
+            <ul id="transaction-list">
+                </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
